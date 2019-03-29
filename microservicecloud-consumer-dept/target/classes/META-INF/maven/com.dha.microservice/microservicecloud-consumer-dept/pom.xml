@@ -8,6 +8,11 @@
   <artifactId>microservicecloud-consumer-dept</artifactId>
   
   <dependencies>
+		<!-- 将微服务provider侧注册进eureka -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
 		<dependency>
 			<groupId>com.dha.microservice</groupId>

@@ -1,3 +1,14 @@
 server:
-  port: 9001
- 
+  port: 10001
+
+spring:
+   application:
+    name: dept-consumer
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka001.com:7001/eureka,http://eureka002.com:7002/eureka/
+      
+
+

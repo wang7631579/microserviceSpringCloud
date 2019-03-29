@@ -40,6 +40,7 @@ public class DeptController {
 //	private DiscoveryClient client;
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
 	public Object discovery() {
+		System.out.println("8001----8001----8001");
 		List<String> list = client.getServices();
 		System.out.println("**********" + list);
 
