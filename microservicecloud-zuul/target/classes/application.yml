@@ -1,0 +1,32 @@
+server:
+  port: 6003
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka001.com:7001/eureka,http://eureka002.com:7002/eureka/
+  instance:
+    instance-id: dept-provider-001
+    prefer-ip-address: true
+     
+spring:
+  application:
+    name: service-zuul
+    
+zuul:
+  routes:
+    #/api-a/ 开头匹配到service-producer
+    api-a:
+      path: /mydept/**
+      serviceId: dept-provider
+    #/api-b/ 开头匹配到service-producer
+    api-b:
+      path: /api-b/**
+      serviceId: service-producer
+    #匹配/github/直接重定向到https://github.com/
+    github:
+      path: /github/**
+      url: https://github.com/
+
+
+
