@@ -1,0 +1,17 @@
+server: 
+  port: 4600 
+  
+spring:
+  profiles:
+    active: dev
+    
+---
+
+spring:
+  profiles: dev
+
+server:
+  port: 8880
+
+my:
+  name: ricky

@@ -1,0 +1,12 @@
+server:
+  port: 5300
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wang7631579/SpringCloudConfig.git
+ 

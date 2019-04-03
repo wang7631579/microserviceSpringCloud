@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: application-dev-10001
+  cloud:
+    config:
+      uri: http://127.0.0.1:5300/
+      label: master

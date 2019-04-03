@@ -75,5 +75,10 @@
   	<module>microservicecloud-consumer-feign2</module>
   	<module>microservice-provider-dept-8003-hystrix</module>
   	<module>microservicecloud-zuul</module>
+  	<module>microservice-hystrix-dashboard</module>
+  	<module>microservice-provider-dept-8004-hystrix</module>
+  	<module>microservice-config</module>
+  	<module>microservice-config-server</module>
+  	<module>microservice-config-client</module>
   </modules>
 </project>
